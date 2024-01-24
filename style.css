@@ -1,0 +1,372 @@
+:root{
+
+    --azul-dnc: #0c70f2;
+    --preto-dnc: #303030;
+    --cinza-hover: #c9c9c9;
+
+    --fonte-padrao: 'Inter';
+
+}
+
+body{
+
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(180deg, rgba(12, 112, 242, 0.5) 35%, rgba(12, 112, 242, 0) 45%), #303030;
+    background-repeat: no-repeat;
+
+}
+
+/* Navegation Menu */
+
+#menuNav{
+
+    background-color: var(--preto-dnc);
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #bababa;
+    
+}
+
+        #linksMenuNav{
+
+            width: 52%;
+            display: flex;
+            justify-content: space-around;
+            margin-left: 5%;
+
+        }
+
+            #linksMenuNav :hover{
+
+                color: var(--cinza-hover);
+            
+        }
+
+        #menuNav div a{
+
+            color: white;
+            font-weight: 600;
+            font-size: 20px;
+            text-decoration: none;
+            font-family: var(--fonte-padrao);
+            
+        }
+
+        #menuNav button{
+
+            cursor: pointer;
+            margin-right: 5%;
+            background-color: var(--azul-dnc);
+            border: 0;
+           
+            color: white;
+            font-family: var(--fonte-padrao);
+            font-size: 18px;
+            font-weight: 600;
+
+            width: 80px;
+            height: 40px;
+            box-shadow: 3px 2px 4px #053575
+        }
+
+/* Form Menu */
+
+section{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: 100px auto 100px auto;
+
+
+}
+
+    header{
+
+        color: white;
+        font-family: var(--fonte-padrao);
+
+    }
+
+    header h1{
+
+        font-size: 80px;
+        font-weight: 800;
+        text-align: center;
+
+        margin-bottom: 20px;
+
+    }
+
+    header h2{
+
+        text-align: center;
+        font-size: 40px;
+        font-weight: 700;
+        margin-bottom: 50px;
+
+    }
+
+    header .invert{
+
+        background-color: black;
+        font-weight: bold;
+        padding: 5px;
+    }
+
+    form {
+
+        color: white;
+        font-family: var(--fonte-padrao);
+        font-size: 30px;
+        font-weight: 600;
+        width: 600px;
+
+    }   
+
+        .form-group{
+            
+            display: flex;
+            flex-direction: column;
+            margin: 10px auto 10px auto;
+        
+        }
+
+        form input{
+
+            border-radius: 10px;
+            height: 30px;
+            border: 0px;
+            font-size: 20px;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.9);
+        
+        }
+
+        form label{
+
+            margin: 15px 0 15px 0;
+            
+        }
+
+        form input::placeholder{
+
+            color: rgba(57,57,57,0.5);
+
+        }
+
+        .checkbox label{
+
+            font-size: 25px;
+
+        }
+
+        .checkbox{
+
+            display: flex;
+            justify-content:space-around;
+            align-items: center;
+
+        }
+
+        input[type="checkbox"]{
+
+            transform: scale(1.7);
+        }
+
+        input[type="submit"]{
+
+            background-color: var(--azul-dnc);
+            width: 100%;
+            height: 56px;
+            color: white;
+            font-size: 32px;
+            margin: 75px auto 0 auto;
+            box-shadow: 0px 6px 4px #053575;
+            cursor: pointer;
+
+        }
+
+/* Footer */
+
+footer {
+
+    width: 100%;
+    background-color: var(--azul-dnc);
+
+}
+
+    footer .line1{
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+
+    footer ul{
+
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+
+    }
+
+    footer nav{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 330px;
+
+    }
+
+    footer h5{
+
+        text-align: center;
+        color: white;
+        font-weight: 800;
+        font-size: 18px;
+        font-family: var(--fonte-padrao);
+        background-color: var(--preto-dnc);
+        border-radius: 10px;
+        padding: 10px;
+        margin-bottom: 15px;
+    }
+
+    footer ul li{
+
+        text-align: center;
+        color: white;
+        font-weight: 600;
+        font-size: 18px;
+        font-family: var(--fonte-padrao);
+        margin: 20px 0px 20px 0px;
+
+    }
+
+    footer ul li a{
+
+        color: white;
+        text-decoration: none;
+
+    }
+
+    #adress{
+
+        color: white;
+        font-weight: 600;
+        font-size: 18px;
+        font-family: var(--fonte-padrao);
+        width: 20%;
+        text-align: center;
+    }
+
+    footer ul li a:hover{
+
+        color: var(--cinza-hover)
+    }
+
+    footer .line2{
+
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        height: 35px;
+        padding: 10px;
+
+    }
+
+    footer .line2 a{
+
+        font-family: var(--fonte-padrao);
+        font-size: 18px;
+        font-weight: 600;
+        color: white;
+        padding: 10px;
+        text-decoration: none;;
+
+    }
+
+    footer .line2 a:hover{
+
+        color: var(--cinza-hover);
+    }
+
+    footer .line2 a:first-child{
+
+        border-right: 2px solid white;
+    }
+
+    @media only screen and (max-width: 600px){
+        
+    /* Navegation Menu */
+     
+        #menuNav{
+
+            flex-direction: column;
+            height: auto;
+            margin: 0px;
+        }
+
+        #linksMenuNav{
+
+            flex-direction: column;
+            width: 90%;
+            align-items: center;
+        }
+
+        #menuNav div a{
+
+            height: 35px;  
+        }
+
+        #menuNav button{
+
+            width: 100%;
+            margin: 0px;
+        }
+
+    /* Form Menu */
+
+        header h1{
+
+            font-size: 38px;
+        }
+
+        header h2{
+
+            font-size: 25px;
+            padding-right: 5px;
+            padding-left: 15px;
+        }
+
+        form{
+
+            width: 95%;
+        }
+
+        .checkbox label{
+
+            font-size: 15px;
+        }
+
+    /* Footer */
+    
+        footer .line1{
+
+            flex-direction: column;
+        }
+
+        #adress{
+
+            width: 95%;
+            margin-bottom: 25px;
+        }
+    }
